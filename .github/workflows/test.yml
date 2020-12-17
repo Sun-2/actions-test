@@ -9,4 +9,7 @@ jobs:
     steps:
       - name: say-hello
         run: echo Hello world.
-    
+      - name: view-files
+        run: |
+             ls
+             ls ..
