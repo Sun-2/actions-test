@@ -4,13 +4,10 @@ name: Hello world
 on: push
 
 jobs:
-  some-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: say-hello
-        run: echo Hello world.
-      - name: view-files
-        run: |
-             ls
-             ls ..
-             ls actions-test
+  steps:
+    - checkout:
+    uses: actions/checkout@v2
+    
+    - ls:
+    run: echo $(ls)
+    
