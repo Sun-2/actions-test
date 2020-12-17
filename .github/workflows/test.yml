@@ -4,10 +4,11 @@ name: Hello world
 on: push
 
 jobs:
+  runs-on: ubuntu-latest
   steps:
     - checkout:
     uses: actions/checkout@v2
-    
+
     - ls:
     run: echo $(ls)
     
