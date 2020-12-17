@@ -5,4 +5,8 @@ on: push
 
 jobs:
   some-job:
-    run: echo Hello world.
+    runs-on: ubuntu-latest
+    steps:
+      - name: say-hello
+        run: echo Hello world.
+    
