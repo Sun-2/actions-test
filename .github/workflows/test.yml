@@ -7,9 +7,9 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - checkout:
+      - name: checkout
         uses: actions/checkout@v2
 
-      - ls:
+      - name: ls
         run: echo $(ls)
     
